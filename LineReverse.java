@@ -5,11 +5,12 @@ public class LineReverse {
 
 public static String reversString(String str){
      StringBuilder sb = new StringBuilder();
+     //System.out.println("Input String : "+str);
 try {
    if(str==null)
    throw new IllegalArgumentException("String is null");
    char[] chars = str.toCharArray();
-   for(int i = chars.length -1; i >0; i--){
+   for(int i = chars.length -1; i >=0; i--){
     sb.append(chars[i]);
    }
 } catch (Exception e) {
